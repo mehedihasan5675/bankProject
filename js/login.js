@@ -17,7 +17,7 @@ if(!email /*email ==false */){
     // alert('Email must be provide');return
 }
 else if(!email.includes('@')/*email.includes('@') ==false */ || !email.endsWith('.com') /*email.endsWith('.com') ==false */){
-    document.getElementById('sign_up_success').innerText='Invalid email : try Again';
+    document.getElementById('sign_up_success').innerText='Invalid email : Please provide a valid email.';
     // alert('Invalid : try Again'); return
 }
 else if(emailPass.length < 8){

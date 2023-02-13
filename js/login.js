@@ -83,7 +83,7 @@ else if(inputPassText!==registerpass){
 }
 
 else{
-    document.getElementById('login_success').innerText='Please fill up your field'
+    document.getElementById('login_success').innerText='Please : SIGN UP an account before Login. '
 }
 
 

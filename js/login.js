@@ -30,8 +30,8 @@ const inpurEmailText = inputEmailField.value;
 const inputPassField = document.getElementById('input_pass_log');
 const inputPassText = inputPassField.value;
 
-inputEmailField.value='';
-inputPassField.value='';
+// inputEmailField.value='';
+// inputPassField.value='';
 
 if(inpurEmailText === registermail && inputPassText===registerpass){
     window.location.href='bank.html'

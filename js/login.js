@@ -31,7 +31,7 @@ const inputPassField = document.getElementById('input_pass_log');
 const inputPassText = inputPassField.value;
 
 // inputEmailField.value='';
-// inputPassField.value='';
+inputPassField.value='';
 
 if(inpurEmailText === registermail && inputPassText===registerpass){
     window.location.href='bank.html'
@@ -49,17 +49,5 @@ if(inpurEmailText === registermail && inputPassText===registerpass){
 
 
 
-
-
-//deposite part staart
-
-// document.getElementById('deposit_btn').addEventListener('click',function(){
-//     const depositInputField=document.getElementById('deposit_input');
-//    const depositInputTextString =depositInputField.value;
-//    const depositInputText=parseFloat(depositInputTextString);
-//    console.log(depositInputText);
-   
-   
-// })
 
 

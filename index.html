@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN বাপ এর ব্যাংক</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <div class="mt-40 w-9/12 mx-auto text-center">
+        <h1
+          class="text-2xl md:text-4xl sm:text-3xl font-semibold text-center my"
+        >
+          <span class="text-teal-900">WELCOME TO MY </span
+          ><span class="text-orange-500 ml-2"> বাপ এর ব্যাংক!!!</span>
+        </h1>
+        <div class="md:grid md:grid-cols-2 md:gap-10">
+          <div class="bg-teal-900 py-10 mt-10 rounded-2xl">
+            <h2 class="text-slate-100 font-semibold text-2xl text-left ml-5">
+              Please Sign Up
+            </h2>
+            <input
+              type="email"
+              id="input_email_sign"
+              placeholder="set your user email address"
+              class="block ml-5 mt-5 p-2 rounded-md w-4/5 md:w-10/12 outline-gray-400"
+              required
+            />
+            <input
+              type="password"
+              required
+              id="input_password_sign"
+              placeholder="set your password"
+              class="block ml-5 mt-5 p-2 rounded-md w-4/5 md:w-10/12 outline-gray-400"
+            />
+            <p
+              id="sign_up_success"
+              class="text-green-400 pt-1 ml-5 text-left"
+            ></p>
+            <button
+              class="block hover:bg-teal-700 rounded-md ml-5 mt-4 py-3 px-6 font-semibold font-serif bg-teal-600 text-white"
+              id="sign_up_btn"
+            >
+              Sign Up
+            </button>
+          </div>
+
+          <div class="bg-cyan-900 py-10 mt-10 rounded-2xl">
+            <h2 class="text-slate-100 font-semibold text-2xl text-left ml-5">
+              Please Login
+            </h2>
+            <input
+              type="email"
+              id="input_email_log"
+              placeholder="type your email address"
+              class="block ml-5 mt-5 p-2 rounded-md w-4/5 md:w-10/12 outline-gray-400"
+            />
+            <input
+              type="password"
+              id="input_pass_log"
+              placeholder="type your password"
+              class="block ml-5 mt-5 p-2 rounded-md w-4/5 md:w-10/12 outline-gray-400"
+            />
+            <p id="login_success" class="text-red-400 pt-1 ml-5 text-left"></p>
+            <button
+              id="login_btn"
+              class="block hover:bg-cyan-700 rounded-md ml-5 mt-4 py-3 px-8 font-semibold font-serif bg-cyan-600 text-white"
+            >
+              Loign
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script src="js/login.js"></script>
+  </body>
+</html>

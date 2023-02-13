@@ -20,8 +20,8 @@ else if(!email.includes('@')/*email.includes('@') ==false */ || !email.endsWith(
     document.getElementById('sign_up_success').innerText='Invalid email : Please provide a valid email.';
     // alert('Invalid : try Again'); return
 }
-else if(emailPass.length < 8){
-    document.getElementById('sign_up_success').innerText='Password must be at least 8 characters long';
+else if(emailPass.length < 4){
+    document.getElementById('sign_up_success').innerText='Password must be at least 4 characters long';
     // alert('Password must be at least 8 characters long');return    
 }else{
     document.getElementById('sign_up_success').innerText='Registration successfully Done!';
@@ -62,9 +62,23 @@ console.log(registermail,registerpass);
 // }
 if(registermail && registerpass){
     if(inputEmailText === registermail && inputPassText===registerpass){
-    window.location.href='bank.html'
+    window.location.href='bank.html';
+    document.getElementById('login_success').innerText='Login successfully Done!';
+document.getElementById('login_success').style.color='#00FF00'
+}else if(!inputEmailText){
+    document.getElementById('login_success').innerText='Email must be provide';
+}
+else if(!inputPassText){
+    document.getElementById('login_success').innerText='Please : Fill up the password field ';
+}
+else if(inputEmailText != registermail){
+    document.getElementById('login_success').innerText='Wrong email : Please provide your signed up email.';
+}
+else if(inputPassText!==registerpass){
+    document.getElementById('login_success').innerText='Wrong Password : give the correct password ';  
 }else{
-    document.getElementById('login_success').innerText='Please enter your correct information!'
+    document.getElementById('login_success').innerText='Invalid Information!';
+  
 }
 }
 
